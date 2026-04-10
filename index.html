@@ -10,7 +10,49 @@
 
 <body>
     <header>
-        <h1>logo</h1>
+        <h1 class="logo">
+            <a href="#">
+                <img src="img/header/headerlogo.webp" alt="ポートフォリオサイトのロゴ">
+            </a>
+        </h1>
+
+        <nav class="pc_nav">
+            <ul>
+                <li>about</li>
+                <li>works</li>
+                <li>skill</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+
+        <nav class="mobile_nav" aria-label="メインナビゲーション">
+            <h2 class="sr_only">メインメニュー</h2>
+
+            <button class="menu_trigger" id="menu_open" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <div class="menu_overlay" id="menu_overlay" aria-hidden="true">
+                <button class="menu_close" id="menu_close" aria-label="メニューを閉じる">&times;</button>
+
+                <ul class="menu_list">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#about">skill</a></li>
+                    <li><a href="#reasons">contact</a></li>
+
+                    <li class="menu_cta">
+                        <a href="#" class="cta_button">
+                            無料体験レッスンの申込
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
 
     </header>
 
