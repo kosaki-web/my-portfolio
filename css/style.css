@@ -1,57 +1,149 @@
-/*
-  Josh W. Comeau's Custom CSS Reset
-  www.joshwcomeau.com
-*/
-
-/* 1. ボックスモデルの修正：余白や境界線が幅を壊さないようにする */
+/* =========================
+   Reset
+========================= */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* 2. デフォルトの余白を削除 */
-* {
-    margin: 0;
-}
-
-/* 3. 本文の行間を整え、フォントのレンダリングを滑らかにする */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-/* 4. メディア要素（画像など）がはみ出さないようにし、ブロック要素化する */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+/* =========================
+   Variables
+========================= */
+:root {
+    --max-width: 1440px;
+    --space: 40px;
+    --color-main: #333;
 }
 
-/* 5. フォーム要素が親のフォント設定を無視するのを防ぐ */
-input,
-button,
-textarea,
-select {
-    font: inherit;
+/* =========================
+   Layout
+========================= */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* 6. 長い単語が画面からはみ出して横スクロールが出るのを防ぐ */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
+.section {
+    margin: var(--space) 0;
 }
 
-/* 7. ルート（#rootや#__nextなど）にスタック文脈を作成する（Reactなどのフレームワーク用） */
-#root,
-#__next {
-    isolation: isolate;
+/* =========================
+   Header
+========================= */
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+
+/* =========================
+   Hero
+========================= */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* =========================
+   Components
+========================= */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.7;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card__title {
+    text-align: center;
+}
+
+/* =========================
+   Works Grid
+========================= */
+.works__grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+/* =========================
+   Top Button
+========================= */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* =========================
+   Tablet (768px〜)
+========================= */
+@media (min-width: 768px) {
+    .works__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   PC (1024px〜)
+========================= */
+@media (min-width: 1024px) {
+    .header__nav {
+        display: block;
+    }
+
+    .header__toggle {
+        display: none;
+    }
+
+    .works__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
 }
