@@ -43,12 +43,26 @@ body {
     position: sticky;
     top: 0;
     background: #fff;
+    padding: 0 10px;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__logo {
+    margin: 10px 0;
+}
+
+.header__logo a {
+    display: block;
+    height: 50px;
+}
+
+.header__logo img {
+    height: 50px;
 }
 
 .header__nav {
@@ -62,6 +76,15 @@ body {
 }
 
 /* =========================
+   Tablet (768px〜)
+========================= */
+@media (min-width: 768px) {
+    .header__toggle {
+        width: 48px;
+    }
+}
+
+/* =========================
    PC (1024px〜)
 ========================= */
 @media (min-width: 1024px) {
@@ -70,7 +93,6 @@ body {
     }
 
     .header__logo a {
-        display: block;
         height: 70px;
     }
 
