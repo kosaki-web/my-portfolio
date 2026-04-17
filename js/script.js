@@ -7,7 +7,6 @@
     const menuToggle = document.getElementById('menu__toggle');
     const nav = document.getElementById('nav');
     const topBtn = document.getElementById('top__btn');
-    const menuToggle = document.getElementById('menu__toggle');
     const menuOverlay = document.getElementById('menu__overlay');
     const menuClose = document.getElementById('menu__close');
     const menuLinks = document.querySelectorAll('.menu__list a');
