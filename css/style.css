@@ -121,15 +121,24 @@ body {
     background: rgba(255, 255, 255, 0.98);
     z-index: 99;
     text-align: center;
-    padding-top: 50px;
 }
 
-.menu__overlay ul li {
-    margin-bottom: 30px;
+.menu__list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50% 0;
+    margin: 0;
 }
 
-.menu__overlay a {
-    font-size: 1.5rem;
+.menu__list li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu__list a {
+    font-size: 1.8rem;
     font-family: 'Noto Serif JP', serif;
 }
 
@@ -153,23 +162,14 @@ body.menu-open .header__toggle span:nth-child(3) {
     transform: translateY(-13px) rotate(-45deg);
 }
 
-/* --- レスポンシブ設定 --- */
-/* @media (max-width: 768px) {
-    .menu-trigger {
-        display: block;
-        padding-right: 20px;
-    }
-} */
-
-
 /* =========================
    Tablet (768px〜)
 ========================= */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .header__toggle {
         width: 48px;
     }
-} */
+}
 
 /* =========================
    PC (1024px〜)
