@@ -31,11 +31,28 @@
                 </ul>
             </nav>
 
-            <button class="header__toggle" id="menu-toggle" aria-label="メニュー開閉">
+            <button class="header__toggle" id="menu__toggle" aria-label="メニュー開閉">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
+            <div class="menu__overlay" id="menu__overlay" aria-hidden="true">
+                <button class="menu__close" id="menu__close" aria-label="メニューを閉じる">&times;</button>
+
+                <ul class="menu__list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">お問い合わせフォーム</a></li>
+                    <li class="menu__cta">
+                        <a href="#" class="cta__button">
+                            無料体験レッスンの申込
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
