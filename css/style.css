@@ -92,7 +92,84 @@ body {
     border-radius: 2px;
 }
 
+.menu__list {
+    display: none;
+}
 
+
+/* 全画面メニューの背景コンテナ */
+.menu__overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #F8D49D;
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 表示状態 */
+.menu__overlay.active {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* 閉じるボタン (×) - 最前面に配置 */
+.menu__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 48px;
+    background: none;
+    border: none;
+    color: #000;
+    /* 黒色で確実に表示 */
+    cursor: pointer;
+    line-height: 1;
+    z-index: 20000;
+    /* リストより上に配置 */
+}
+
+/* メニューリスト */
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* 横幅いっぱい */
+    max-width: 400px;
+    /* 広がりすぎ防止 */
+    text-align: center;
+    position: relative;
+    /* z-indexを有効にするため */
+    z-index: 10000;
+    /* 背景より確実に手前に */
+    display: block !important;
+    /* 他のスタイルに消されないように */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.menu__list li {
+    /* margin: 15px 0; */
+    /* 画像の密度に合わせる */
+    display: block !important;
+    /* リスト項目を強制表示 */
+    margin: 20px 0;
+}
+
+.menu__list li a {
+    text-decoration: none;
+    color: #2D3261;
+    /* 画像通りのネイビー系 */
+    font-size: 1.3rem;
+    /* 少し大きくして読みやすく */
+    font-weight: bold;
+    /* display: block;
+    padding: 10px; */
+}
 
 
 /* =========================
