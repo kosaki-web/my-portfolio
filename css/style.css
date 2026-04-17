@@ -62,12 +62,64 @@ body {
 }
 
 /* =========================
+   PC (1024px〜)
+========================= */
+@media (min-width: 1024px) {
+    .header {
+        padding: 0 30px;
+    }
+
+    .header__logo a {
+        display: block;
+        height: 70px;
+    }
+
+    .header__logo img {
+        height: 70px;
+    }
+
+    .header__nav {
+        display: block;
+    }
+
+    .header__nav a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .header__list {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+
+    .header__toggle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* =========================
    Hero
 ========================= */
 .hero {
+    width: 100%;
+    height: auto;
     text-align: center;
     padding: 80px 0;
+    background-image: url(../img/hero/hero_background_image_seigaiha.webp)
 }
+
+
+
+
+
+
 
 /* =========================
    Components
@@ -131,13 +183,6 @@ body {
    PC (1024px〜)
 ========================= */
 @media (min-width: 1024px) {
-    .header__nav {
-        display: block;
-    }
-
-    .header__toggle {
-        display: none;
-    }
 
     .works__grid {
         grid-template-columns: repeat(3, 1fr);
