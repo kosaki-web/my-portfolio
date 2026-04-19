@@ -254,10 +254,23 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 .card {
     transition: transform 0.3s;
+    background-color: #ece1e1;
+    border-radius: 20px;
+    padding: 1rem 0;
+}
+
+.card img {
+    width: 75%;
+    margin: 0 13%;
 }
 
 .card__title {
     text-align: center;
+    margin: 0;
+}
+
+.card__title span {
+    display: inline-block;
 }
 
 /* =========================
