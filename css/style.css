@@ -29,7 +29,7 @@ body {
 ========================= */
 .container {
     max-width: var(--max-width);
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
 }
 
@@ -263,7 +263,18 @@ body.menu-open .header__toggle span:nth-child(3) {
     transition: transform 0.3s;
     background-color: #ece1e1;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 0.8rem;
+}
+
+.card p {
+    margin-bottom: 0;
+    font-family: 'Noto Sans JP';
+    font-size: 1.2rem;
+}
+
+.card ul {
+    margin-top: 0;
+    padding-left: 30px;
 }
 
 .card img {
@@ -285,7 +296,7 @@ body.menu-open .header__toggle span:nth-child(3) {
 ========================= */
 .works__grid {
     display: grid;
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: 1fr;
 }
 
