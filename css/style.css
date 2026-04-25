@@ -34,6 +34,9 @@ body {
 }
 
 .container ul {
+    padding-left: 30px;
+    width: fit-content;
+    margin: auto;
     text-align: left;
 }
 
@@ -226,8 +229,11 @@ body.menu-open .header__toggle span:nth-child(3) {
     height: auto;
     text-align: center;
     padding: 80px 0;
-    background-image: url(../img/hero/hero_background_image_seigaiha.webp)
+    background-image: url(../img/hero/hero_background_image_seigaiha.webp);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
 }
+
 
 
 
@@ -245,11 +251,12 @@ body.menu-open .header__toggle span:nth-child(3) {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    border-radius: 20px;
 }
 
 .button:hover,
 .button:focus {
-    opacity: 0.7;
+    transform: translateY(5px);
 }
 
 .section-title {
@@ -264,18 +271,23 @@ body.menu-open .header__toggle span:nth-child(3) {
     background-color: #ece1e1;
     border-radius: 20px;
     padding: 0.8rem;
+    display: grid;
+    gap: 20px;
 }
 
 .card p {
-    margin-bottom: 0;
     font-family: 'Noto Sans JP';
     font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
 }
 
-.card ul {
+/* .card ul {
     margin-top: 0;
     padding-left: 30px;
-}
+    width: fit-content;
+    margin: auto;
+} */
 
 .card img {
     width: 100%;
