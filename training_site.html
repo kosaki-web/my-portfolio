@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- 通常のファビコン -->
+    <link rel="icon" href="img/favicon/my_portfolio_favicon.webp" sizes="32x32" type="image/webp">
+
+    <!-- iPhoneなど -->
+    <link rel="apple-touch-icon" href="img/favicon/my_portfolio_favicon.webp" sizes="180x180">
+
+    <!-- Windowsタイル -->
+    <meta name="msapplication-TileImage" content="img/favicon/my_portfolio_favicon.webp">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">
+                <a href="#top">
+                    <img src="img/logo/headerlogo.webp" alt="F.K. CODING & DESIGNのロゴ">
+                </a>
+            </h1>
+
+            <nav class="header__nav" id="nav">
+                <ul class="header__list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__toggle" id="js__menu__toggle" aria-label="メニュー開閉">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="menu__overlay" id="js__menu__overlay">
+            <ul class="menu__list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="top">
+
+        <main>
+
+            <!-- パンくず -->
+            <section class="section">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home</a> &gt;
+                        <a href="index.html#works">Works</a> &gt;
+                        <span>作品詳細</span>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- 作品詳細 -->
+            <section class="section works-detail">
+                <div class="container">
+
+                    <!-- タイトル -->
+                    <h2 class="section-title">
+                        職業訓練学校の課題として制作したWeb初心者～中級者向けデザイン教室Webサイト
+                    </h2>
+
+                    <!-- メインビジュアル -->
+                    <div class="works-detail__thumbnail">
+                        <img src="img/thumbnail/toppage_thumbnail_trainingsite.webp" alt="デザイン教室Webサイトのサムネイル">
+                    </div>
+
+                    <!-- 基本情報 -->
+                    <div class="works-detail__info">
+
+                        <div class="works-detail__item">
+                            <h3>制作範囲</h3>
+                            <p>デザイン / コーディング</p>
+                        </div>
+
+                        <div class="works-detail__item">
+                            <h3>使用技術</h3>
+                            <p>HTML / CSS / JavaScript</p>
+                        </div>
+
+                        <div class="works-detail__item">
+                            <h3>制作期間</h3>
+                            <p>約2週間</p>
+                        </div>
+
+                        <div class="works-detail__item">
+                            <h3>URL</h3>
+                            <p>
+                                <a href="#" target="_blank" rel="noopener">
+                                    サイトを見る
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- 概要 -->
+                    <div class="works-detail__content">
+                        <h3>概要</h3>
+                        <p>
+                            Web初心者〜中級者向けのデザイン教室を想定したサイトです。
+                            情報の整理とCTAの導線設計を意識し、ユーザーが迷わず行動できる構成を目指しました。
+                        </p>
+                    </div>
+
+                    <!-- 意識した点 -->
+                    <div class="works-detail__content">
+                        <h3>意識した点</h3>
+                        <ul>
+                            <li>モバイルファースト設計によるUI最適化</li>
+                            <li>レスポンシブ対応による各デバイスでの視認性確保</li>
+                            <li>CTAボタンの配置と視線誘導の最適化</li>
+                        </ul>
+                    </div>
+
+                    <!-- 課題と改善 -->
+                    <div class="works-detail__content">
+                        <h3>課題と改善点</h3>
+                        <p>
+                            初期段階では情報量が多く、視線誘導が弱いという課題がありました。
+                            セクションごとに余白と強弱を調整することで、可読性と導線を改善しました。
+                        </p>
+                    </div>
+
+                    <!-- ギャラリー（任意） -->
+                    <div class="works-detail__gallery">
+                        <h3>画面キャプチャ</h3>
+                        <div class="works__grid">
+                            <img src="img/works/sample1.webp" alt="画面キャプチャ1">
+                            <img src="img/works/sample2.webp" alt="画面キャプチャ2">
+                        </div>
+                    </div>
+
+                    <!-- 戻るボタン -->
+                    <div class="works-detail__back">
+                        <a href="index.html#works" class="button">一覧に戻る</a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <a href="#" class="button">お問い合わせ</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 FK Portfolio</p>
+    </footer>
+
+    <button id="top-btn" class="top-button" aria-label="トップへ戻る">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
