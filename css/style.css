@@ -256,14 +256,31 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 .button:hover,
 .button:focus {
-    transform: translateY(5px);
+    transform: translateY(-5px);
 }
 
 .section-title {
     text-align: center;
     font-size: 24px;
-    margin: 20px 0;
+    margin: 20px 0 10px;
     color: #4e4e4e;
+}
+
+
+
+
+
+/* =========================
+   Works
+========================= */
+.works__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+.works__grid a {
+    text-decoration: none;
 }
 
 .card {
@@ -282,13 +299,6 @@ body.menu-open .header__toggle span:nth-child(3) {
     text-align: center;
 }
 
-/* .card ul {
-    margin-top: 0;
-    padding-left: 30px;
-    width: fit-content;
-    margin: auto;
-} */
-
 .card img {
     width: 100%;
 }
@@ -301,15 +311,6 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 .card__title span {
     display: inline-block;
-}
-
-/* =========================
-   Works Grid
-========================= */
-.works__grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
 }
 
 /* =========================
