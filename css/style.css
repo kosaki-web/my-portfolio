@@ -374,33 +374,39 @@ body.menu-open .header__toggle span:nth-child(3) {
 .works__detail__thumbnail img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .works__detail__content {
     background-color: #ece1e1;
     border-radius: 20px;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .works__detail__content h4 {
     margin-bottom: 0;
+    text-align: left;
 }
 
 .works__detail__content p {
     margin-top: 0;
     text-align: justify;
     padding-left: 3px;
+    color: #4e4e4e;
 }
 
 .works__detail__content span {
-    display: inline-block;
+    color: #e02525;
 }
 
 .works__detail__content ul {
     margin-bottom: 1rem;
     padding-left: 20px;
+}
+
+.works__detail__content__point {
+    margin-bottom: 30px;
 }
 
 .works__detail__info {
@@ -412,7 +418,7 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 .works__detail__info div p {
     padding: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 .works__detail__item {
