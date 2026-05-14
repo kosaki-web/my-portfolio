@@ -473,25 +473,22 @@ h3 {
     background-color: #f0cece;
     border-radius: 20px;
     text-align: center;
-    padding: 0 10px 20px;
+    padding: 20px 10px;
+    display: grid;
+    gap: 30px;
 }
 
 
 /* <!-- works__detail__item --> */
-.works__detail__item {
-    display: grid;
-    gap: 1rem;
-}
-
 .works__detail__item h3 {
-    margin: 2rem auto 0;
+    margin: 0 auto 0;
     font-size: 1.5rem;
 }
 
 .works__detail__item p {
     text-align: justify;
     width: fit-content;
-    margin: auto;
+    margin: 0 auto 1rem;
 }
 
 .works__detail__item span {
