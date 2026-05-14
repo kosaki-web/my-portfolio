@@ -22,6 +22,8 @@ body {
     --max-width: 1440px;
     --space: 40px;
     --color-main: #333;
+    scroll-padding-top: 40px;
+    scroll-behavior: smooth;
 }
 
 /* =========================
@@ -171,6 +173,10 @@ body.menu-open .header__toggle span:nth-child(3) {
    Tablet (768px〜)
 ========================= */
 @media (min-width: 768px) {
+    :root {
+        scroll-padding-top: 48px;
+    }
+
     .header__toggle {
         width: 48px;
     }
@@ -180,6 +186,10 @@ body.menu-open .header__toggle span:nth-child(3) {
    PC (1024px〜)
 ========================= */
 @media (min-width: 1024px) {
+    :root {
+        scroll-padding-top: 70px;
+    }
+
     .header {
         padding: 0 30px;
     }
