@@ -296,7 +296,7 @@ body.menu-open .header__toggle span:nth-child(3) {
     transition: transform 0.3s;
     background-color: #ece1e1;
     border-radius: 20px;
-    padding: 0.8rem;
+    padding: 1.5rem 0.8rem;
     display: grid;
     gap: 20px;
 }
@@ -333,7 +333,7 @@ body.menu-open .header__toggle span:nth-child(3) {
     font-size: 2rem;
     border-radius: 50px;
     color: #4e4e4e;
-    background-color: #ece1e1;
+    background-color: #f58686;
     border: none;
 }
 
